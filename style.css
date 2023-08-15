@@ -1,0 +1,406 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: black;
+    min-height: 10vh;
+    color: rgb(19, 15, 15);
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    padding-left: 1rem;
+}
+
+header * {
+    max-height: 10vh;
+}
+
+.logo {
+    height: 10%;
+    width: 10%;
+}
+
+h1 {
+    color: #d4e02d;
+    font-size: 2rem;
+    font-weight: 100;
+    flex-grow: 2;
+    text-align: center;
+}
+
+header img {
+    background-color: black;
+}
+
+header img:hover {
+    transform: scale(1.2);
+}
+
+nav {
+    min-height: 5vh;
+    background-color: #e6e4e4;
+    display: flex;
+    gap: 5rem;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.item {
+    height: 1.5rem;
+    color: rgb(19, 15, 15);
+    font-weight: lighter;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+
+}
+
+.item:hover {
+    transform: scale(1.1);
+    box-shadow: 2px 2px 2px black;
+}
+
+main {
+    background-image: url(/hockey20.jpg);
+    background-size: cover;
+    min-height: 80vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: space-around;
+    justify-content: space-evenly;
+}
+
+.contenido {
+    background-color: #e6e4e4;
+    width: 50vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+    margin: 20px;
+}
+
+h2 {
+    height: 8%;
+    width: 100%;
+    text-align: center;
+    padding: 1%;
+}
+
+h3 {
+    padding: 5px;
+}
+
+p {
+    font-size: medium;
+    padding: 5px;
+    text-align: justify;
+}
+
+.parrafo {
+    font-size: large;
+    text-align: center;
+}
+
+caption {
+    font-size: larger;
+    color: black;
+    font-weight: 600;
+}
+
+table {
+    background-color: #e6e4e4;
+    height: 30px;
+    font-size: 19px;
+    margin: 10px;
+}
+
+table,
+td {
+    padding-top: 5px;
+    padding-bottom: 1px;
+    text-align: center;
+    background-color: #e6e4e4;
+    color: black;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: gray;
+    color: white;
+    padding: 5px;
+}
+
+td {
+    padding: 2px;
+}
+
+.contenidomapas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: end;
+    justify-content: space-evenly;
+    background-color: #d4e02d4b;
+    margin: 10px;
+}
+
+iframe {
+    border-radius: 15px;
+    box-shadow: -7px 9px 15px rgba(0, 0, 0, .3);
+}
+
+.box_list2 {
+    background-color: #e6e4e4;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-indent: 4px;
+    padding: 2%;
+    justify-content: space-between;
+}
+
+ul li:nth-child(1) {
+    list-style-type: none;
+}
+
+ul li:nth-child(2) {
+    list-style-type: none;
+}
+
+ol {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding-left: 15px;
+    padding: 5px;
+}
+
+ol li {
+    padding: 2px;
+}
+
+#rules {
+    text-align: center;
+    font-size: large;
+    font-weight: bolder;
+}
+
+.fields {
+    list-style-type: lower-alpha;
+}
+
+footer {
+    min-height: 5vh;
+    background-color: #e6e4e4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    background-color: #e6e4e4;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 2%;
+
+}
+
+fieldset {
+    border: 2px solid black;
+    width: 95%;
+    margin: 3px;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: left;
+    padding: 10px;
+}
+
+.radiocontainer {
+    margin: 5px;
+    padding: 5px;
+}
+
+legend {
+    background-color: gray;
+    color: white;
+    padding: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+#tituloform {
+    font-weight: 600;
+    font-size: x-large;
+    text-align: center;
+    padding: 5px;
+    width: 100%;
+}
+
+fieldset h2 {
+    font-size: large;
+    text-align: left;
+}
+
+label {
+    width: 50%;
+}
+
+select {
+    margin-left: 10px;
+    justify-content: space-around;
+}
+
+#submitButton {
+    font-size: large;
+    margin: 10px;
+}
+
+input {
+    margin: 5px;
+}
+
+
+@media only screen and (min-width:320px) and (max-width:767px) {
+    header {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .logo {
+        width: 40%;
+        height: 40%;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+    }
+
+    .item {
+        font-weight: 600;
+    }
+
+    .contenido {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    table {
+        font-size: 9px;
+
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 15px;
+    }
+
+    .contenidomapas {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+
+    }
+
+    fieldset h2 {
+        text-align: center;
+    }
+
+    label {
+        font-size: 10px;
+        text-align: center;
+    }
+
+    input {
+        width: 90%;
+    }
+
+    legend {
+        font-size: small;
+        padding: 0 0.5rem;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+
+    fieldset {
+        flex-direction: row;
+        text-align: center;
+    }
+
+    iframe {
+        width: 70%;
+        height: 70%
+    }
+
+
+    footer {
+        font-size: 10px;
+    }
+
+    .radiocontainer {
+        margin: 1px;
+        padding: 2px;
+        width: 40%;
+    }
+
+}
+
+@media only screen and (min-width:768px) and (max-width:1440px) {
+    nav {
+        gap: 2rem;
+    }
+
+    .contenido {
+        width: 90%;
+    }
+
+    form {
+        width: 95%;
+    }
+
+    iframe {
+        width: fit-content;
+    }
+
+    label {
+        width: 50%;
+    }
+
+    input {
+        margin: 1px;
+    }
+
+}
